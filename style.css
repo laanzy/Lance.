@@ -1,0 +1,383 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a
+{
+    color: #d4d3ce;
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-image: linear-gradient(12deg, rgba(193, 193, 193,0.05) 0%, rgba(193, 193, 193,0.05) 2%,rgba(129, 129, 129,0.05) 2%, rgba(129, 129, 129,0.05) 27%,rgba(185, 185, 185,0.05) 27%, rgba(185, 185, 185,0.05) 66%,rgba(83, 83, 83,0.05) 66%, rgba(83, 83, 83,0.05) 100%),linear-gradient(321deg, rgba(240, 240, 240,0.05) 0%, rgba(240, 240, 240,0.05) 13%,rgba(231, 231, 231,0.05) 13%, rgba(231, 231, 231,0.05) 34%,rgba(139, 139, 139,0.05) 34%, rgba(139, 139, 139,0.05) 71%,rgba(112, 112, 112,0.05) 71%, rgba(112, 112, 112,0.05) 100%),linear-gradient(236deg, rgba(189, 189, 189,0.05) 0%, rgba(189, 189, 189,0.05) 47%,rgba(138, 138, 138,0.05) 47%, rgba(138, 138, 138,0.05) 58%,rgba(108, 108, 108,0.05) 58%, rgba(108, 108, 108,0.05) 85%,rgba(143, 143, 143,0.05) 85%, rgba(143, 143, 143,0.05) 100%),linear-gradient(96deg, rgba(53, 53, 53,0.05) 0%, rgba(53, 53, 53,0.05) 53%,rgba(44, 44, 44,0.05) 53%, rgba(44, 44, 44,0.05) 82%,rgba(77, 77, 77,0.05) 82%, rgba(77, 77, 77,0.05) 98%,rgba(8, 8, 8,0.05) 98%, rgba(8, 8, 8,0.05) 100%),linear-gradient(334deg, hsl(247,0%,2%),hsl(247,0%,2%));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f8f7f4;
+}
+
+.header
+{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.logo
+{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f8f7f4;
+}
+
+.menu-bar a
+{
+    
+    font-size: 1.6rem;
+    margin-left: 3.5rem;
+    transition: 0.5s ease;
+    
+}
+
+#menu-btn
+{
+    font-size: 3rem;
+    display: none;
+}
+
+section
+{
+    padding: 10rem 10%;
+    min-height: 100vh;
+}
+
+
+
+/*Home Section*/
+.HOME
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HOME-BIO h3
+{
+    font-size: 2.9rem;
+}
+
+span
+{
+    color: hsl(194, 78%, 66%);
+    font: bolder;
+}
+
+.HOME-BIO h1
+{
+    font-size: 3.9rem;
+    line-height: 1.4;
+    color: whitesmoke;
+}
+
+.HOME-BIO p
+{
+    font-size: 2rem;
+    color: #c7c7c7;
+    padding: 1rem 0;
+}
+
+.profile-picture img
+{
+    width: 30vw;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-2.5rem);
+    } 
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+.social-media a
+{
+    width: 3.9rem;
+    height: 3.8rem;
+    font-size: 3rem;
+    margin: 1rem 1rem 2rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.4s ease;
+    color: whitesmoke;
+}
+.social-media a:hover
+{
+    color: #f8f7f4;
+    box-shadow: 0 0 1rem #a5a5a2;
+}
+
+
+/*About Section*/
+.ABOUT
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading
+{
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+.ABOUT h2{
+    color: #f8f7f4;
+}
+
+.ABOUT-items
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.ABOUT-resume
+{
+    font-size: 2rem;
+}
+
+.ABOUT-text p
+{
+    font-size: 1.9rem;
+}
+
+
+/*Skills Section*/
+.SKILLS
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SKILLS-item
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+}
+
+.SKILLS-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.SKILLS-card:hover
+{
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+
+.SKILLS-card .bx
+{
+    font-size: 8rem;
+    transition: 0.4s ease;
+}
+
+.SKILLS-card .bx:hover
+{
+    color: hsl(194, 78%, 66%);
+}
+.SKILLS-card h3
+{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.SKILLS-card p
+{
+    font-size: 1.5rem;
+    opacity: 0.5;
+    text-align: justify;
+}
+
+
+/*Contact Section*/
+.CONTACT
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form
+{
+    display: grid;
+    row-gap: 1rem;
+}
+
+form input,textarea
+{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #070707;
+    border-radius: 1rem;
+    resize: none;
+}
+
+
+/*Footer Section*/
+.footer
+{
+    padding: 2rem 10%;
+    text-align: center;
+    font-size: 1rem;
+}
+hr
+{
+    margin: 1rem;
+    border-bottom: thin solid #F2ECBE;
+}
+
+/*Quote Section*/
+
+.QUOTES p{
+    font-size: 2rem;
+}
+
+.SKILLS-card .picquote{
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+/*Responsive Section*/
+@media (max-width: 1200px)
+{
+    html
+    {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .header
+    {
+        padding: 2rem 4%;
+    }
+    .home img
+    {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 767px)
+{
+    #menu-btn
+    {
+        display: block;
+    }
+    .menu-bar
+    {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #240000;
+        display: none;
+    }
+    .menu-bar.active
+    {
+        display: block;
+    }
+    .menu-bar a
+    {
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+    .HOME, .ABOUT-items
+    {
+        flex-direction: column;
+    }
+    .HOME img
+    {
+        width: 80vw;
+    }
+    .heading
+    {
+        font-size: 3rem;
+    }
+    .SKILLS-item
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 620px)
+{
+    .SKILLS-item
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .heading
+    {
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 450px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+}
